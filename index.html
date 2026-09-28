@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cosmin Mircea | Portfolio | Desarrollo de Software</title>
+    <title>Cosmin Mircea | Portfolio | Desarrollo Web & Software</title>
     <style>
         :root {
             --bg-color: #010409;
@@ -13,7 +13,6 @@
             --text-muted: #8b949e;
             --accent: #58a6ff;
             --border: #30363d;
-            --hover-btn: #1f6feb;
             --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         }
         
@@ -24,11 +23,10 @@
             background-color: var(--bg-color);
             color: var(--text-main);
             line-height: 1.6;
-            padding-top: 70px; /* Espacio para la barra de navegación */
+            padding-top: 70px;
             overflow-x: hidden;
         }
 
-        /* Barra de navegación (Inspiración Gabriela) */
         .navbar {
             background-color: var(--nav-bg);
             padding: 1rem 2rem;
@@ -71,7 +69,6 @@
             padding: 0 1rem;
         }
 
-        /* Header Principal */
         header {
             text-align: center;
             padding: 5rem 1rem;
@@ -89,8 +86,8 @@
 
         header p {
             color: var(--text-muted);
-            font-size: 1.5rem;
-            max-width: 600px;
+            font-size: 1.3rem;
+            max-width: 650px;
             margin: 0 auto 1.5rem;
         }
 
@@ -114,26 +111,20 @@
             cursor: pointer;
         }
 
-        .btn:active {
-            transform: scale(0.98);
-        }
+        .btn:active { transform: scale(0.98); }
 
         .btn-primary {
             background-color: var(--accent);
             color: var(--bg-color);
         }
-        .btn-primary:hover {
-            background-color: #4493f8;
-        }
+        .btn-primary:hover { background-color: #4493f8; }
 
         .btn-secondary {
             background-color: transparent;
             color: var(--text-main);
             border: 1px solid var(--border);
         }
-        .btn-secondary:hover {
-            background-color: var(--nav-bg);
-        }
+        .btn-secondary:hover { background-color: var(--nav-bg); }
 
         section {
             background: var(--card-bg);
@@ -152,22 +143,16 @@
             font-weight: 700;
         }
 
-        /* Secciones de Texto */
         .about-text p, .project-card p {
             color: var(--text-muted);
             margin-bottom: 1rem;
             max-width: 75ch;
         }
 
-        /* Stack Tecnológico Mejorado */
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 1.5rem;
-        }
-
-        .skill-category {
-            margin-bottom: 1.5rem;
         }
 
         .skill-category h3 {
@@ -191,14 +176,8 @@
             border-radius: 6px;
             font-size: 0.9rem;
             font-weight: 500;
-            transition: background-color 0.2s, border-color 0.2s;
-        }
-        .badge:hover {
-            background-color: var(--nav-bg);
-            border-color: var(--accent);
         }
 
-        /* Proyectos Destacados con estilo Github Cards */
         .project-card {
             border: 1px solid var(--border);
             background: #0d1117;
@@ -232,14 +211,13 @@
             font-size: 0.9rem;
             display: flex;
             align-items: center;
-            gap: 0.3rem;
+            gap: 0.4rem;
         }
         .proj-link:hover {
             color: var(--accent);
             text-decoration: underline;
         }
 
-        /* Footer Mejorado */
         footer {
             text-align: center;
             color: var(--text-muted);
@@ -249,68 +227,56 @@
             border-top: 1px solid var(--border);
         }
 
-        /* Responsive */
         @media (max-width: 768px) {
             header h1 { font-size: 2.5rem; }
             header p { font-size: 1.1rem; }
             .navbar { padding: 1rem; }
-            .nav-links { gap: 1rem; font-size: 0.8rem; }
             section { padding: 1.5rem; }
-            .cta-buttons { flex-direction: column; }
         }
     </style>
 </head>
 <body>
-    <!-- Barra de Navegación Superior -->
     <nav class="navbar">
-        <a href="#" class="nav-brand">Cosmin Mircea | DAM</a>
+        <a href="#" class="nav-brand">Cosmin Mircea | DAW</a>
         <div class="nav-links">
             <a href="#about">Sobre mí</a>
             <a href="#skills">Stack Técnico</a>
-            <a href="#projects">Proyectos DAM</a>
+            <a href="#projects">Proyectos</a>
         </div>
     </nav>
 
-    <!-- Header Principal (más visual) -->
     <header>
         <div class="container">
             <h1>¡Hola, soy Cosmin!</h1>
-            <p>Estudiante de 2º de Desarrollo de Aplicaciones Multiplataforma (DAM) enfocado en el desarrollo de software robusto y escalable.</p>
+            <p>Estudiante de Desarrollo de Aplicaciones Web (DAW) especializado en la creación de lógicas backend robustas y aplicaciones interactivas.</p>
             <div class="cta-buttons">
                 <a href="https://github.com/cosmin15azs-sys" target="_blank" class="btn btn-primary">
                     <svg height="20" width="20" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.22 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.06-1.86 3.75-3.64 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
                     Ver mi GitHub
-                </a>
-                <!-- Aquí deberías añadir el enlace a tu CV en PDF -->
-                <a href="ruta_a_tu_cv.pdf" target="_blank" class="btn btn-secondary">
-                    Descargar CV
                 </a>
             </div>
         </div>
     </header>
 
     <div class="container">
-        <!-- Sección Sobre mí (más completa) -->
         <section id="about">
             <h2>Sobre mí</h2>
             <div class="about-text">
-                <p>Soy un apasionado del desarrollo de software cursando el último año de DAM en Madrid. Mi perfil técnico combina una base sólida en algoritmos y estructuras de datos con experiencia práctica en el diseño e implementación de aplicaciones empresariales y de escritorio.</p>
-                <p>Actualmente profundizo en arquitecturas cliente-servidor, la integración de bases de datos relacionales y NoSQL, y el control de versiones con Git dentro de pipelines de integración continua. Busco constantemente aprender nuevas tecnologías y aplicar buenas prácticas de ingeniería de software para resolver problemas del mundo real.</p>
+                <p>Estudiante apasionado por el desarrollo web y de software en Madrid. Combino el diseño de interfaces limpias con el desarrollo de lógicas de servidor eficientes y estructuradas bajo los principios de la Programación Orientada a Objetos.</p>
+                <p>Me enfoco en escribir código mantenible, aplicar patrones de diseño correctos y utilizar herramientas de control de versiones para gestionar proyectos escalables.</p>
             </div>
         </section>
 
-        <!-- Sección Stack Técnico (revisada) -->
         <section id="skills">
             <h2>Stack Tecnológico</h2>
             <div class="skills-grid">
                 <div class="skill-category">
                     <h3>Backend & Lenguajes</h3>
                     <div class="badge-container">
-                        <span class="badge">Java</span>
-                        <span class="badge">POO</span>
-                        <span class="badge">JUnit (Testing)</span>
-                        <span class="badge">Python (Básico)</span>
-                        <span class="badge">XML/XSD</span>
+                        <span class="badge">Java (POO)</span>
+                        <span class="badge">Interfaces & Polimorfismo</span>
+                        <span class="badge">Java Collections</span>
+                        <span class="badge">PHP / JavaScript</span>
                     </div>
                 </div>
                 <div class="skill-category">
@@ -319,20 +285,16 @@
                         <span class="badge">MySQL</span>
                         <span class="badge">MariaDB</span>
                         <span class="badge">PostgreSQL</span>
-                        <span class="badge">Oracle DB</span>
-                        <span class="badge">MongoDB (NoSQL)</span>
-                        <span class="badge">Diseño ER</span>
+                        <span class="badge">MongoDB</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Entornos & Herramientas</h3>
+                    <h3>Entornos & Control de Versiones</h3>
                     <div class="badge-container">
                         <span class="badge">Git & GitHub</span>
                         <span class="badge">Linux (Ubuntu)</span>
-                        <span class="badge">Eclipse IDE</span>
+                        <span class="badge">Eclipse</span>
                         <span class="badge">VS Code</span>
-                        <span class="badge">VirtualBox</span>
-                        <span class="badge">AWS</span>
                     </div>
                 </div>
                 <div class="skill-category">
@@ -340,55 +302,41 @@
                     <div class="badge-container">
                         <span class="badge">HTML5</span>
                         <span class="badge">CSS3</span>
-                        <span class="badge">JS (Básico)</span>
+                        <span class="badge">XML / XSD</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Sección Proyectos Destacados (más descriptiva) -->
         <section id="projects">
-            <h2>Proyectos Destacados DAM</h2>
+            <h2>Proyectos Destacados</h2>
             
+            <!-- Proyecto de la Granja (Basado en tu código de clases y main) -->
             <div class="project-card">
-                <h3>Sistema de Gestión Hospitalaria (Java Swing)</h3>
-                <p>Aplicación de escritorio desarrollada en Java para la gestión de pacientes, médicos y citas. Incluye arquitectura MVC, persistencia de datos en MySQL mediante JDBC, generación de informes en PDF y validaciones de integridad referencial en base de datos.</p>
+                <h3>Sistema de Gestión de Granja (Java POO)</h3>
+                <p>Aplicación en Java estructurada en paquetes que simula el control integral de una granja. Implementa clases abstractas (`Animal`), herencia y especialización de entidades (`Vaca`, `Cerdo`, `Oveja`), interfaces personalizadas (`LecheProducida`)[cite: 6, 7, 8, 9, 10] y un menú de consola interactivo con control de stock, gestión de estados y operaciones dinámicas[cite: 11].</p>
                 <div class="badge-container">
                     <span class="badge">Java SE</span>
-                    <span class="badge">Swing</span>
-                    <span class="badge">MySQL</span>
-                    <span class="badge">JDBC</span>
+                    <span class="badge">Clases Abstractas</span>
+                    <span class="badge">Interfaces</span>
+                    <span class="badge">Polimorfismo</span>
                 </div>
                 <div class="project-links">
-                    <a href="https://github.com/cosmin15azs-sys/nombre_repositorio" target="_blank" class="proj-link">🔗 Ver Código en GitHub</a>
+                    <!-- Cambia "gestion-granja" por el nombre exacto de tu repositorio cuando lo subas -->
+                    <a href="https://github.com/cosmin15azs-sys/gestion-granja" target="_blank" class="proj-link">🔗 Ver Código en GitHub</a>
                 </div>
             </div>
 
             <div class="project-card">
-                <h3>API REST para E-Commerce (Prácticas en curso)</h3>
-                <p>Desarrollo de un backend para una tienda online utilizando Java (Spring Boot). Implementación de endpoints para gestión de productos y usuarios, autenticación JWT y mapeo objeto-relacional (ORM) con Hibernate.</p>
+                <h3>Portfolio Personal (GitHub Pages)</h3>
+                <p>Sitio web estático diseñado desde cero utilizando HTML5 y CSS moderno para servir como carta de presentación profesional, organizado con diseño responsive y componentes optimizados.</p>
                 <div class="badge-container">
-                    <span class="badge">Java</span>
-                    <span class="badge">Spring Boot</span>
-                    <span class="badge">JPA/Hibernate</span>
-                    <span class="badge">PostgreSQL</span>
+                    <span class="badge">HTML5</span>
+                    <span class="badge">CSS3</span>
+                    <span class="badge">GitHub Pages</span>
                 </div>
                 <div class="project-links">
-                    <a href="https://github.com/cosmin15azs-sys/nombre_repositorio" target="_blank" class="proj-link">🔗 Ver Código en GitHub</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <h3>Automatización y Despliegue Cloud (AWS)</h3>
-                <p>Configuración de entornos de producción en AWS utilizando instancias EC2 con Linux Ubuntu. Automatización de despliegues de aplicaciones web y configuración de bases de datos relacionales en la nube (AWS RDS). Enfoque en escalabilidad y seguridad.</p>
-                <div class="badge-container">
-                    <span class="badge">AWS (EC2, RDS)</span>
-                    <span class="badge">Linux Ubuntu</span>
-                    <span class="badge">SSH</span>
-                    <span class="badge">Nginx</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/cosmin15azs-sys/nombre_repositorio" target="_blank" class="proj-link">🔗 Ver Código en GitHub</a>
+                    <a href="https://github.com/cosmin15azs-sys/cosmin15azs-sys.github.io" target="_blank" class="proj-link">🔗 Ver Código en GitHub</a>
                 </div>
             </div>
         </section>
@@ -396,8 +344,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Cosmin Mircea &bull; Estudiante de DAM &bull; Desplegado con GitHub Pages</p>
-            <p style="margin-top: 0.5rem;"><a href="mailto:tucorreo@email.com">cosmin15azs@email.com</a></p>
+            <p>&copy; 2026 Cosmin Mircea &bull; Estudiante de DAW &bull; Desplegado con GitHub Pages</p>
         </div>
     </footer>
 </body>
