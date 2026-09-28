@@ -3,57 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cosmin Mircea | Portfolio de Desarrollo</title>
+    <title>Cosmin Mircea | Portfolio 2º DAM</title>
     <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --text-main: #c9d1d9;
+            --text-muted: #8b949e;
+            --accent: #58a6ff;
+            --border: #30363d;
+        }
+        
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
         body {
-            font-family: Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
             line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f7f6;
-            color: #333;
+            padding: 2rem 1rem;
         }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
         header {
-            background-color: #24292e;
-            color: white;
             text-align: center;
-            padding: 2.5rem 1rem;
+            padding: 3rem 1rem;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            margin-bottom: 2rem;
         }
-        main {
-            max-width: 800px;
-            margin: 2rem auto;
-            background: white;
+
+        header h1 {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        section {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
             padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 1.5rem;
         }
-        h1 { margin-top: 0; color: #0366d6; }
-        .project {
-            border-left: 4px solid #0366d6;
-            padding-left: 1rem;
-            margin: 1.5rem 0;
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--accent);
+            margin-bottom: 1.2rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill-category h3 {
+            font-size: 1rem;
+            color: var(--text-main);
+            margin-bottom: 0.5rem;
+        }
+
+        .badge-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .badge {
+            background: #21262d;
+            border: 1px solid var(--border);
+            color: var(--accent);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .project-card {
+            border: 1px solid var(--border);
+            background: #0d1117;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .project-card h3 {
+            color: var(--text-main);
+            margin-bottom: 0.5rem;
+        }
+
+        .project-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            color: var(--text-muted);
+            margin-top: 3rem;
+            font-size: 0.9rem;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>¡Hola, soy Cosmin!</h1>
-        <p>Estudiante de Desarrollo de Aplicaciones Multiplataforma (DAM) | Desarrollador Junior</p>
-    </header>
-    
-    <main>
+    <div class="container">
+        <header>
+            <h1>Cosmin Mircea</h1>
+            <p>Estudiante de 2º de Desarrollo de Aplicaciones Multiplataforma (DAM)</p>
+            <p style="margin-top: 1rem;"><a href="https://github.com/cosmin15azs-sys" target="_blank">GitHub Profile</a></p>
+        </header>
+
         <section>
             <h2>Sobre mí</h2>
-            <p>Apasionado de la programación, el desarrollo de software y la tecnología. Aquí iré recopilando los proyectos y prácticas que vaya realizando.</p>
+            <p>Apasionado del desarrollo de software, la arquitectura de bases de datos y la automatización de sistemas. Actualmente cursando el último año de DAM en Madrid, enfocado en escribir código limpio, eficiente y escalable tanto en entornos backend como en aplicaciones de escritorio y web.</p>
         </section>
 
         <section>
-            <h2>Mis Proyectos</h2>
-            <div class="project">
-                <h3>Próximamente...</h3>
-                <p>Subiendo mis primeros repositorios de Java, Bases de Datos y aplicaciones web.</p>
+            <h2>Stack Tecnológico</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Backend y Lenguajes</h3>
+                    <div class="badge-container">
+                        <span class="badge">Java</span>
+                        <span class="badge">JUnit</span>
+                        <span class="badge">POO</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Bases de Datos</h3>
+                    <div class="badge-container">
+                        <span class="badge">MySQL</span>
+                        <span class="badge">MariaDB</span>
+                        <span class="badge">PostgreSQL</span>
+                        <span class="badge">Oracle</span>
+                        <span class="badge">MongoDB</span>
+                        <span class="badge">HeidiSQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Entornos y Herramientas</h3>
+                    <div class="badge-container">
+                        <span class="badge">Linux / Ubuntu</span>
+                        <span class="badge">Git & GitHub</span>
+                        <span class="badge">Eclipse</span>
+                        <span class="badge">VS Code</span>
+                        <span class="badge">VirtualBox</span>
+                        <span class="badge">AWS (Cloud)</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Frontend y Web</h3>
+                    <div class="badge-container">
+                        <span class="badge">HTML5</span>
+                        <span class="badge">CSS3</span>
+                        <span class="badge">XML / XSD</span>
+                    </div>
+                </div>
             </div>
         </section>
-    </main>
+
+        <section>
+            <h2>Proyectos Destacados de DAM</h2>
+            
+            <div class="project-card">
+                <h3>Gestión de Restaurante & App Web</h3>
+                <p>Desarrollo integral de backend en Java, diseño relacional de bases de datos y planificación de pruebas unitarias y test plans orientados a entornos de producción.</p>
+                <div class="badge-container">
+                    <span class="badge">Java</span>
+                    <span class="badge">SQL</span>
+                    <span class="badge">JUnit</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>Modelado de Datos y Arquitectura de BD</h3>
+                <p>Diseño e implementación de esquemas DDL/DML complejos, consultas avanzadas (DQL) y optimización en motores relacionales como PostgreSQL y MariaDB.</p>
+                <div class="badge-container">
+                    <span class="badge">PostgreSQL</span>
+                    <span class="badge">MariaDB</span>
+                    <span class="badge">HeidiSQL</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>Infraestructura Cloud y Despliegues</h3>
+                <p>Simulaciones de arquitecturas y costes en entornos Cloud (AWS: EC2, RDS, S3) y administración de servidores bajo entornos Linux/Ubuntu con control de logs y permisos.</p>
+                <div class="badge-container">
+                    <span class="badge">AWS</span>
+                    <span class="badge">Linux Ubuntu</span>
+                    <span class="badge">VirtualBox</span>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Cosmin Mircea &bull; Desplegado con GitHub Pages</p>
+        </footer>
+    </div>
 </body>
 </html>
